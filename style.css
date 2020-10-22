@@ -1,0 +1,16 @@
+.grid {
+    border: 2px black solid;
+}
+.row > div {
+    background-color: coral;
+    border: 1.5px black solid;
+}
+
+.row > div:nth-child(odd) {
+    background-color: steelblue;
+}
+  
+.row {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr)
+}

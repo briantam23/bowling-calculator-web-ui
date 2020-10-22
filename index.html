@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bowling Challenge</title>
+        <link rel='stylesheet' href='./style.css'/>
+    </head>
+    <body>
+        <h1>Back End Bowling Challenge</h1>
+        <div class='grid'>
+            <div class='row' id='frameContainer'>
+                <div>Frame</div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+            </div>
+            <div class='row' id='inputContainer'>
+                <div>Input</div>
+                <div id='input1'></div>
+                <div id='input2'></div>
+                <div id='input3'></div>
+                <div id='input4'></div>
+                <div id='input5'></div>
+                <div id='input6'></div>
+                <div id='input7'></div>
+                <div id='input8'></div>
+                <div id='input9'></div>
+                <div id='input10'></div>
+            </div>
+            <div class='row' id='scoreContainer'>
+                <div>Score</div>
+                <div id='score1'></div>
+                <div id='score2'></div>
+                <div id='score3'></div>
+                <div id='score4'></div>
+                <div id='score5'></div>
+                <div id='score6'></div>
+                <div id='score7'></div>
+                <div id='score8'></div>
+                <div id='score9'></div>
+                <div id='score10'></div>
+            </div>
+        </div>
+        <br/><br/>
+        <form onsubmit='return false'>
+            <input id='input' value='' autofocus>
+            <button id='submitButton' onclick='bowlingGame.roll()'>Submit</button>
+            <button onclick='bowlingGame.reset()'>Reset</button>
+        </form>
+        <br/>
+        <div id='msg'></div>
+        <script type='text/javascript' src='./index.js'></script>
+    </body>
+</html>
